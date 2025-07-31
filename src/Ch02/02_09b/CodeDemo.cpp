@@ -7,7 +7,19 @@
 
 enum class character_role {protagonist, antagonist, sidekick, npc};
 
+struct game_character{
+    std::string name;
+    int level;
+    character_role role; // enum variable for character_role
+};
+
 int main(){
+    game_character buddy;
+    buddy.name = "Tony";
+    buddy.level = 10;
+    buddy.role = character_role::sidekick;
+
+    std::cout << buddy.name << " is a level " << buddy.level << " with a role of " << (int) buddy.role << std::endl;
     
     std::cout << std::endl << std::endl;
     return 0;
