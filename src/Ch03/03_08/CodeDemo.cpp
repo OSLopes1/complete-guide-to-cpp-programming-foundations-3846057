@@ -9,14 +9,16 @@ double my_average(int a, int8_t b, uint32_t c){
     double result = 0.0;
 
     // Write your code here
-    
+    result = (static_cast<double>(a)+static_cast<double>(b)+static_cast<double>(c))/3;
+    // also result = (a+b+c)/3.0
+
     return result;
 }
 
 int main(){
-    int a = 10;
-    int8_t b = 21;
-    uint32_t c = 30;
+    int a = -12;
+    int8_t b = 15;
+    uint32_t c = 10;
     double learnerResult = my_average(a, b, c);
     
     std::cout << "Your code returned: " << learnerResult << std::endl;
