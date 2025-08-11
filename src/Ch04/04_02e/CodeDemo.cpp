@@ -9,7 +9,7 @@ int main(){
     int a = 37;
     int *ptr;
 
-    ptr = &a;
+    ptr = &a;// point to address of variable a
 
     std::cout << "             The value of a is " << a << std::endl;
     std::cout << "    ptr is pointing to address " << ptr << std::endl;
