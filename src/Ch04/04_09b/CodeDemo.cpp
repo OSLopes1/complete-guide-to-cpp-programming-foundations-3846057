@@ -7,8 +7,8 @@
 
 int main(){
     const size_t LENGTH = 50;
-    char racer1[];
-    char racer2[LENGTH];
+    char racer1[] = "Speedy";
+    char racer2[LENGTH] = ;
     char raceResult[LENGTH * 2];
 
     std::cout << "Racer 1: " << racer1 << std::endl;
