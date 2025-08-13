@@ -10,6 +10,7 @@ std::vector<int> SelectKeyPoints(std::vector<int> distances, int checkpointIndex
     std::vector<int> result;
 
     // Write your code here
+    result = {distances[0],distances[checkpointIndex],distances[distances.size()-1]}; // my code
     
     return result;
 }
