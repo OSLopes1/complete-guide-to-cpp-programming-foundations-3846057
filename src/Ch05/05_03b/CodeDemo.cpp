@@ -15,7 +15,25 @@ int main(){
     std::cout << "Choose operation [ + - * / ]: " << std::flush;
     std::cin >> operation;
 
-    // switch goes here
+    switch (operation){
+        case '+': 
+            result = operand_1 + operand_2;
+            break;
+        case '-': 
+            result = operand_1 - operand_2;
+            break;
+        case '*': 
+            result = operand_1 * operand_2;
+            break;
+        case '/': 
+            result = operand_1 + operand_2;
+            break;
+        default:
+            result = operand_1 + operand_2;
+            break;
+
+
+    }// switch (operation) end
 
     std::cout << "The result is " << result << std::endl;
     
