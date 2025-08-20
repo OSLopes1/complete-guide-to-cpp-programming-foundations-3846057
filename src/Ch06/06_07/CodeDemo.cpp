@@ -8,20 +8,39 @@
 
 // Function to calculate score based on milliseconds difference 
 // You still need to make the bonus multiplier optional with a default value
-double CalculateScore(int millisecondsDiff, double bonusMultiplier){
+double CalculateScore(int millisecondsDiff, double bonusMultiplier = 1.0){
     double score = 0.0;
 
     // Write your code here
-    
+    if (millisecondsDiff <= 50)
+        score = bonusMultiplier * 100;
+    else if (millisecondsDiff <= 100)
+        score = bonusMultiplier * 70;
+    else if (millisecondsDiff <= 200)
+        score = bonusMultiplier * 50;
+    else
+        score = 0;
+
+
+
     return score;
 }
 
 // Overloaded function to calculate score based on seconds difference 
 // You still need to make the bonus multiplier optional with a default value
-double CalculateScore(double secondsDiff, double bonusMultiplier){
+double CalculateScore(double secondsDiff, double bonusMultiplier = 1.5){
     double score = 0.0;
+    //double millisecondsDiff = secondsDiff/1000; cast to an integer and then submit to other function
     
     // Write your code here
+    if (secondsDiff <= 0.05)
+        score = bonusMultiplier * 100;
+    else if (secondsDiff <= 0.1)
+        score = secondsDiff * 70;
+    else if (secondsDiff <= 0.2)
+        score = bonusMultiplier * 50;
+    else
+        score = 0;
 
     return score;
 }
