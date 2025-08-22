@@ -9,15 +9,14 @@
 
 class Inventory{
 public:
-    // Default Constructor
-    Inventory(){
-        capacity = 10;
+    // Default Constructor - like default (self) values in python
+    Inventory(): capacity(10){
         items = new std::vector<std::string>();
     }
 
     // Overloaded Constructor
-    Inventory(int capacity){
-        this->capacity = capacity;
+    Inventory(int capacity_i): capacity(capacity_i){
+        //this->capacity = capacity; // pointer that refers to this instances of the class/object
         items = new std::vector<std::string>();
     }
 
